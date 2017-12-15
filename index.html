@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#Home">Aaron Slevin</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Education">Education</a>
+                </li>
+                <li>
+                    <a href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+                <li class="pull-right">
+                    <form id="searchBox" class="form-inline" onsubmit="submitSearch()">
+                        <input id="searchTxt" class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-success" type="submit" style="margin-bottom: .8em;">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <br>
+
+            <div class="jumbotron">
+                <div id="top page" class="top_page">
+                    <h2>
+                        <b> Aaron Slevin - Network Engineer</b>
+                    </h2>
+                    <div id="bitmoji section" class="bitmoji_section">
+                        <img class="img-responsive" src="Images/me.jpg" alt="Avatar" height="320" width="320">
+                    </div>
+                    <div id="Icons" class="col-md-12">
+                        <a href="https://github.com/arbo94" target="_blank" class="fa fa-github"></a>
+                        <a href="https://plus.google.com/u/0/118012050960917830560" target="_blank" class="fa fa-google" ></a>
+                        <a href="https://linkedin.com/in/aaronslevin11" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://api.whatsapp.com/send?phone=0873211229" target="_blank" class="fa fa-whatsapp"></a>
+                    </div>
+                    <div id="top buttons" class="top_buttons">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <a href="https://drive.google.com/open?id=0B3ynIPRrL7lwT1ltLXZmQ0xBeURVTDh3aUE3aHhsUVdqVjdB" download="AaronSlevinCV" class="btn btn-info"
+                                        id="HomepageButtons" style="margin-left: 6px;">Download CV</a>
+                                    <button type="button" class="btn btn-default" id="HomepageButtons" data-toggle="modal" data-target="#contactModal" style="margin-left: 6px;">Contact Me</button>
+                                </div>
+                                <div class="modal fade" id="contactModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="contactForm">
+                                                <form action="/action_page.php">
+                                                    <label for="fname">Name</label>
+                                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                                                    <label for="email">Email</label>
+                                                    <input type="text" id="email" name="email" placeholder="Your email..">
+
+                                                    <label for="subject">Subject</label>
+                                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:auto; color:black;"></textarea>
+
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                                        Submit
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="About">
+            <h2>
+                <b>About Me</b>
+            </h2>
+            <hr>
+            <p>The earliest known appearance of the phrase is from The Boston Journal. In an article titled "Current Notes"
+                in the February 10, 1885 morning edition, the phrase is mentioned as a good practice sentence for writing
+                students: "A favorite copy set by writing teachers for their pupils is the following, because it contains
+                every letter of the alphabet: 'A quick brown fox jumps over the lazy dog.'"[1] Dozens of other newspapers
+                published the phrase over the next few months, all using the version of the sentence starting with "A" rather
+                than "The".[2] The earliest known use of the phrase in its modern form (starting with "The") is from the
+                1888 book Illustrative Shorthand by Linda Bronson.[3] As the use of typewriters grew in the late 19th century,
+                the phrase began appearing in typing lesson books as a practice sentence. Early examples include How to Become
+                Expert in Typewriting: A Complete Instructor Designed Especially for the Remington Typewriter (1890),[4]
+                and Typewriting Instructor and Stenographer's Hand-book (1892). By the turn of the 20th century, the phrase
+                had become widely known. In the January 10, 1903, issue of Pitman's Phonetic Journal, it is referred to as
+                "the well known memorized typing line embracing all the letters of the alphabet".[5] Robert Baden-Powell's
+                book Scouting for Boys (1908) uses the phrase as a practice sentence for signaling.[6] The first message
+                sent on the Moscow–Washington hotline on August 30, 1963 was the test phrase "THE QUICK BROWN FOX JUMPED
+                OVER THE LAZY DOG'S BACK 1234567890".[7] Later, during testing, the Russian translators sent a message asking
+                their American counterparts "What does it mean when your people say 'The quick brown fox jumped over the
+                lazy dog?'"[8] During the 20th century, technicians tested typewriters and teleprinters by typing the sentence.[9]
+                A video on YouTube which captured a real occurrence of the pangram gained considerable popularity.[10] The
+                earliest known appearance of the phrase is from The Boston Journal. In an article titled "Current Notes"
+                in the February 10, 1885 morning edition, the phrase is mentioned as a good practice sentence for writing
+                students: "A favorite copy set by writing teachers for their pupils is the following, because it contains
+                every letter of the alphabet: 'A quick brown fox jumps over the lazy dog.'"[1] Dozens of other newspapers
+                published the phrase over the next few months, all using the version of the sentence starting with "A" rather
+                than "The".[2] The earliest known use of the phrase in its modern form (starting with "The") is from the
+                1888 book Illustrative Shorthand by Linda Bronson.[3] As the use of typewriters grew in the late 19th century,
+                the phrase began appearing in typing lesson books as a practice sentence. Early examples include How to Become
+                Expert in Typewriting: A Complete Instructor Designed Especially for the Remington Typewriter (1890),[4]
+                and Typewriting Instructor and Stenographer's Hand-book (1892). By the turn of the 20th century, the phrase
+                had become widely known. In the January 10, 1903, issue of Pitman's Phonetic Journal, it is referred to as
+                "the well known memorized typing line embracing all the letters of the alphabet".[5] Robert Baden-Powell's
+                book Scouting for Boys (1908) uses the phrase as a practice sentence for signaling.[6] The first message
+                sent on the Moscow–Washington hotline on August 30, 1963 was the test phrase "THE QUICK BROWN FOX JUMPED
+                OVER THE LAZY DOG'S BACK 1234567890".[7] Later, during testing, the Russian translators sent a message asking
+                their American counterparts "What does it mean when your people say 'The quick brown fox jumped over the
+                lazy dog?'"[8] During the 20th century, technicians tested typewriters and teleprinters by typing the sentence.[9]
+                A video on YouTube which captured a real occurrence of the pangram gained considerable popularity.[10]</p>
+        </div>
+        <div id="carouselWrapper" class="row" style="padding-bottom:30px;">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="Images/BMW3.jpg" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="Images/GOLF1.jpg" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="Images/BMW2.jpg" style="width:100%;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="row" id="Education">
+                <div class="jumbotron">
+                        <h2>
+                            <b>Education</b>
+                        </h2>
+                        <div class="item">
+                            <img src="Images/ITT.jpg" style="width:100%;">
+                        </div>
+                        <br>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">4th Year Grades</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                        <div class="card-body">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Subject</th>
+                                                            <th>Grade</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Project</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Information Management</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Enterprise Applications Development</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Social Media Analysis</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Interactive Media Design</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Enterprise Performance Architecture</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Artificial Intelligence Logic</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Computational Theory</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Interactive Media Development</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Algorithmic Analysis</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">3rd Year Grades</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="card-body">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Subject</th>
+                                                            <th>Grade</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Industry Project</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Experiental Learning</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Algorithms and Data Structures</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cloud Services and Distributed Computing</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Advanced Databases</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Operating Systems</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Innovation & Entrepreneurship</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">2nd Year Grades</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="card-body">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Subject</th>
+                                                            <th>Grade</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Networking 2</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Networking 1</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Object Oriented Analysis and Design</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Web Applications Development</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Information Security</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Software Development 4</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Software Development 3</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Managment Science</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Database Design and Programming</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Web & Mobile Design & Development</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Software Quality and Assurance Testing</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">1st Year Grades</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                        <div class="card-body">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Subject</th>
+                                                            <th>Grade</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Discrete Mathematics 1</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Learning to Learn</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Business & Information Systems</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Software Development 1</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Web & User Experience</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Database Fundamentals</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Statistics</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Social Media Communication</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Software Development 2</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Object Oriented Systems Analysis</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Operating Systems Fundamentals</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--End Jumbotron -->
+            </div>
+            <div class="row" id="Projects"> 
+                    <h2><b>Projects</b></h2>
+                    <hr>
+                    <div id="myNavBar">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a data-toggle="tab" href="#home">Second Year</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#menu1">Third Year</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#menu2">Fourth Year</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="projectImages">
+                                <img src="Images/Garage.jpg" class="img-responsive">
+                            </div>
+                            <h3>Second Year</h3>
+                            <p>My Second Year Project was a garage booking system using Play Framework.</p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <div class="projectImages">
+                                <img src="Images/Fitness.jpg" class="img-responsive">
+                            </div>
+                            <h3>Third Year</h3>
+                            <p>My Third Year Project was a fitness application using the MEAN stack. </p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <div class="projectImages">
+                                <img src="Images/Cloud.png" class="img-responsive">
+                            </div>
+                            <h3>Fourth Year</h3>
+                            <p>My Fourth Year Project is a cloud migration project. This will sense an on premises network and recreate
+                                that network in Amazon Web Services</p>
+                        </div>
+                    </div>
+        
+            </div>
+            <div class="row">
+                <div class="jumbotron">
+                    <div id="Experience">
+                        <div class="timeline">
+                            <div class="tcontainer leftSide">
+                                <div class="content">
+                                    <h2>2018</h2>
+                                    <p>In May 2018 I will graduate from my course with a Bachelor of Honours in Computing with Software
+                                        Development. I will then be pursuing a career in Managed Services with Inventise Business
+                                        Solutions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tcontainer rightSide">
+                                <div class="content">
+                                    <h2>2017</h2>
+                                    <p>In January of 2017 I started my first ever IT internship with Inventise Busness Solutions, this
+                                        allowed me to gain experience in Managed Sevices which is the field I wish to work in.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tcontainer leftSide">
+                                <div class="content">
+                                    <h2>2016</h2>
+                                    <p>Achieved my Cisco CCNA qualification allowing me to further pursue the networking side of IT.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tcontainer rightSide">
+                                <div class="content">
+                                    <h2>2015</h2>
+                                    <p>Completed 3 professional websites for my own customers during the summer of my first year in
+                                        ITT, this was a great learning experience for me.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tcontainer leftSide">
+                                <div class="content">
+                                    <h2>2015</h2>
+                                    <p>Started my path in IT by accepting my course in ITT.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="Contact" class="container-fluid">
+                    <div class="float-right">
+                        <h2><b>Contact Me</b></h2>
+                        <div class="contactForm">
+                            <form action="/action_page.php">
+                                <label for="fname">Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Your email..">
+        
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:auto; color:black;"></textarea>
+        
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="mail" class="col-md-12" syle>
+                            <span class="glyphicon glyphicon-envelope"></span> Email:
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aaronslevin11@gmail.com">aaronslevin11@gmail.com</a>
+                            <span class="glyphicon glyphicon-phone"></span> Phone:
+                            <a>0873211229</a>
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Success!!</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Your message was sent successfully.
+                                        <p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MapSection" class="container-fluid">
+                    <div id="map" style="width:100%;height:100%;background:yellow;"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzHmgQUszAj470EDwPeUJPr7u3GoYxPWs&callback=myMap"></script>
+                </div>
+            </div>
+            <script>
+                document.getElementById('searchBox').onsubmit = function () {
+                    window.location = 'http://www.google.com/search?q=site:detailingworld.co.uk ' + document.getElementById('searchTxt').value;
+                    return false;
+                }
+            </script>
+            </div>
+            </div>
+        
+    </div>
+
+</body>
+
+</html>
